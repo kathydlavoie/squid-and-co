@@ -1,0 +1,11 @@
+---
+import MainLayout from '@/src/layouts/MainLayout.astro'
+import {flex} from '@/styled-system/patterns'
+import {css} from '@/styled-system/css'
+---
+
+<MainLayout title="Squid and Co homepage">
+  <div class={flex({justifyContent: 'center'})}>
+    <img class={css({h: '375px', w: '375px', marginTop: '7%'})} src="src/assets/squid-and-co-logo.png" alt="squid and co" />
+  </div>
+</MainLayout>

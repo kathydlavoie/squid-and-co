@@ -1,0 +1,24 @@
+{
+  "name": "@example/minimal",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev && pnpm watch:panda",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "prepare": "panda codegen",
+    "watch:panda": "panda codegen --watch"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^2.2.0",
+    "astro": "^4.0.3"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.35.0",
+    "prettier": "^3.1.0",
+    "prettier-plugin-astro": "^0.12.2"
+  }
+}

@@ -1,0 +1,20 @@
+---
+
+interface Props {
+  blogTitle: string
+  publishDate: string
+  tags: string[]
+}
+
+const {blogTitle, publishDate, tags} = Astro.props
+
+---
+
+<h1>{blogTitle}</h1>
+<p>{publishDate}</p>
+<p>{tags.map((tag) => {
+  <span>{tag}</span>
+})}</p>
+<hr />
+<slot></slot>
+
